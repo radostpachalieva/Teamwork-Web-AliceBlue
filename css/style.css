@@ -51,6 +51,7 @@ a.showLink:hover, a.hideLink:hover {
 
 #news article{
     margin: 2% 4%;
+    overflow: hidden;
 }
 
 .news-image{
