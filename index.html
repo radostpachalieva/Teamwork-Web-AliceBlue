@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>AliceBlue</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Alice Blue</a>
+                        <div class="collapse navbar-collapse navHeaderCollapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#">Начало</a></li>
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Галерия</a></li>
+                                <li><a href="#">Екип</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div> <!-- END collapse navbar-collapse navHeaderCollapse -->
+                    </div> <!-- END container -->
+            </nav>
+        </header><!--===============================================================================================-->
+        <section>
+            <!--Radost-->
+            <h2 id="newsh">- Новини -</h2>
+            <div id="news">
+                <article>
+                    <div class="news-image">
+                        <img src="images/Picture2.jpg" alt=" " />
+                    </div> <!-- END NEWS-IMAGE -->
+                    <h2 class="news-title">
+                        Нов безплатен курс по "Основи на програмирането" започва от 28 март
+                    </h2>
+                    <p> Вече е активно кандидатстването за нов безплатен подготвителен курс по "Основи на програмирането" в СофтУни (ниво #0).
+                        <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Още..</a>
+                            <span id="example" class="more">Всички желаещи могат да кандидатстват до 24 март 23:59 ч., и ще започнат обучението си с програмния зик C# от 28 март. Кандидатите могат да изберат дали да се обучават в присъствена или онлайн форма. Подготвителният курс ще се провежда два пъти седмично - всяка събота и всеки вторник следобед. По време на подготвителното си обучение, кандидат-студентите ще се научат на фундаментите в програмирането, като включените теми са Математика за програмисти, Въведение в програмирането, Примитивни типове данни и променливи, Оператори и изрази, Вход и изход от конзолата, Условни конструкции, Цикли, C# за напреднали. Курсът ще приключи на 18 април, а приемният изпит ще се състои на 25 април. Всички, които успешно вземат изпита, могат да станат наши студенти и да започнат ниво #1 от 4 май 2015 г.
+                            <a href="#" id="example-hide" class="hideLink" onclick="showHide('example'); return false;">Скрий</a>
+                            </span>
+                    </p>
+                </article>
+            </div> <!-- END NEWSH -->
+            </section>
+            <div class="empty-space"></div>
+            <section>
+            <!--End Radost-->
+            
+            <!--Tihomira-->
+            <h2>- Галерия -</h2>
+            <div id="gallery">
+
+            </div> <!-- END GALLERY -->
+            <!--End Tihomira-->
+            
+            <!--Ali-->
+            <h2>- Екип -</h2>
+            <div id="team">
+
+            </div> <!-- END TEAM -->
+            <!--End Ali-->
+            
+            <!--Borislav-->
+            <h2>- Контакти -</h2>
+            <div id="contact">
+
+            </div> <!-- END CONTACT -->
+            <!--End Borislav-->
+        </section>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/On-Click.js"></script>
+                <!--It has to go in js file-->
+        <script type="text/javascript">
+            function showHide(shID) {
+                if (document.getElementById(shID)) {
+                    if (document.getElementById(shID + '-show').style.display != 'none') {
+                        document.getElementById(shID + '-show').style.display = 'none';
+                        document.getElementById(shID).style.display = 'block';
+                    }
+                    else {
+                        document.getElementById(shID + '-show').style.display = 'inline';
+                        document.getElementById(shID).style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

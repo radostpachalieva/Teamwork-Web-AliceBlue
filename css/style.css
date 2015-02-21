@@ -1,28 +1,44 @@
+/* ------------ GLOBAL ------------ */
 body{
     background-color: #F5F5F5 !important;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif !important;
 }
-body > header:first-of-type{
+
+body > header:first-of-type {
     width: 100%;
-    height: 800px;
+    height: 550px;
     -webkit-background-size:cover;
-    background:url('../images/Picture1.jpg') 50% 50% / cover no-repeat fixed;
+    background:url('../images/backg4.jpg') 50% 50% / cover no-repeat fixed;
+
 }
 
-/* Start SECTION ================================================*/
+.empty-space {
+    width: 100%;
+    height: 250px;
+    background:url('../images/backg7.jpg') 50% 50% / cover no-repeat fixed;
+}
+
+/*------------ END GLOBAL ------------*/
+/*------------ h2 Gallery Heading ------------*/
+
+body > section:nth-child(4) > h2:nth-child(1) {
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+/*------------ END h2 Gallery Heading  ------------*/
+/*------------ SECTION ------------*/
 section{
     background-color: white;
-    width: 70%;
-    height: 1000px;
+    width: 90%;
+    height: 500px;
     margin: 0 auto;
     padding: 0;
     text-align: justify;
 }
 
-
-/* End SECTION ==================================================*/
-
-/* Start News ===================================================*/
+/*------------END SECTION ------------*/
+/*------------ NEWS ------------*/
 /* Start Show/Hide functionality. */
 .more {
     display: none;
@@ -51,7 +67,6 @@ a.showLink:hover, a.hideLink:hover {
 
 #news article{
     margin: 2% 4%;
-    overflow: hidden;
 }
 
 .news-image{
@@ -72,12 +87,7 @@ a.showLink:hover, a.hideLink:hover {
 
 }
 
-
-
-
-
-
-/* End News =====================================================*/
+/*------------ END NEWS ------------*/
 
 
 
