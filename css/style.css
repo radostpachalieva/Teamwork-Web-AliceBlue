@@ -1,3 +1,42 @@
+#navbarCollapse {
+    z-index: 999;
+    position: absolute;
+    right: 2%;
+    display: block;
+}
+
+nav.affix-top {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0);
+    transition: 1s;
+    border: none;
+    
+}
+
+nav.affix {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    background: rgba(10, 10, 10, 0.9);
+    width: 100%;
+    transition: 3s;
+    box-shadow: 0px 5px 20px #888888;
+}
+
+
+
+.in {
+    border: 1px solid;
+    position: relative;
+    z-index: 999;
+    background: rgba(10, 10, 10, 0.8);
+    width: 200px;
+}
+
+.collapsing {
+    width: 200px;
+    background: rgba(10, 10, 10, 0.8);
+}
 /* RESOLUTIONS */
 @media (min-width: 1200px) {
 #myCarousel > div > div.item.active > div > div > p {
@@ -46,7 +85,7 @@ body{
 
 body > header:first-of-type {
     width: 100%;
-    height: 550px;
+    height: 100%;
     background:url('../images/backg3.jpg') 50% 50% / cover no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -64,20 +103,20 @@ body > header:first-of-type {
     background-size: cover;
 }
 
-.navbar {
-    opacity: 0.8;
-}
+
 
 /*------------ END GLOBAL ------------*/
 /*------------------------------------------------ HEADER ------------------------------------*/
 /*------------ Navbar ------------*/
-.navbar-right {
-    margin-right: 3%;
-}
+
 /*------------ CAROUSEL HEADER ------------*/
 .carousel-caption {
   z-index: 10;
   margin-bottom: 20px;
+}
+
+.carousel-indicators {
+bottom: 20px;
 }
 
 .ppadding {
@@ -85,12 +124,7 @@ body > header:first-of-type {
 }
 
 .carousel .item {
-margin-top: 50px;
-height: 500px;
-}
-
-.carousel-indicators {
-bottom: 5px;
+    height: 500px;
 }
 
 #myCarousel > a.right.carousel-control {
