@@ -1,46 +1,20 @@
-#navbarCollapse {
-    z-index: 999;
+/*------------------------------------------------ NEDKO ------------------------------------------------*/
+.fullbackghw {
     position: absolute;
-    right: 2%;
-    display: block;
-}
-
-nav.affix-top {
     z-index: 1;
-    background: rgba(255, 255, 255, 0);
-    transition: 1s;
-    border: none;
-    
-}
-
-nav.affix {
-    z-index: 9999;
-    position: fixed;
-    top: 0;
-    background: rgba(10, 10, 10, 0.9);
     width: 100%;
-    transition: 3s;
-    box-shadow: 0px 5px 20px #888888;
+    height: 100%;
+    background:url('../images/backg3.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-
-
-.in {
-    border: 1px solid;
-    position: relative;
-    z-index: 999;
-    background: rgba(10, 10, 10, 0.8);
-    width: 200px;
-}
-
-.collapsing {
-    width: 200px;
-    background: rgba(10, 10, 10, 0.8);
-}
 /* RESOLUTIONS */
 @media (min-width: 1200px) {
 #myCarousel > div > div.item.active > div > div > p {
-    font-size: 35px;
+    font-size: 48px;
     transition: 0.7s;
     }
 }
@@ -75,91 +49,103 @@ nav.affix {
     transition: 0.7s;
     }
 }
-/* RESOLUTIONS */
 
+/* END RESOLUTIONS */
 /* ------------ GLOBAL ------------ */
 body{
     background-color: #F5F5F5 !important;
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif !important;
 }
-
-body > header:first-of-type {
-    width: 100%;
-    height: 100%;
-    background:url('../images/backg3.jpg') 50% 50% / cover no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.empty-space {
-    width: 100%;
-    height: 250px;
-    background:url('../images/backg7.jpg') 50% 50% / cover no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
-
 /*------------ END GLOBAL ------------*/
 /*------------------------------------------------ HEADER ------------------------------------*/
 /*------------ Navbar ------------*/
+#navbarCollapse {
+    z-index: 999;
+    position: absolute;
+    right: 2%;
+    display: block;
+}
 
+nav.affix-top {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0);
+    transition: 1s;
+    border: none;
+    
+}
+
+nav.affix {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    background: rgba(10, 10, 10, 0.9);
+    width: 100%;
+    transition: 3s;
+    box-shadow: 0px 5px 20px #888888;
+}
+
+.in {
+    border: 1px solid;
+    position: relative;
+    z-index: 999;
+    background: rgba(10, 10, 10, 0.8);
+    width: 200px;
+}
+
+.collapsing {
+    width: 199px;
+    background: rgba(10, 10, 10, 0.8);
+}
+
+/*------------ END Navbar ------------*/
 /*------------ CAROUSEL HEADER ------------*/
 .carousel-caption {
   z-index: 10;
-  margin-bottom: 20px;
-}
-
-.carousel-indicators {
-bottom: 20px;
-}
-
-.ppadding {
-    margin-bottom: 130px;
 }
 
 .carousel .item {
-    height: 500px;
+height: 100%;
+margin: 0 auto;
 }
 
-#myCarousel > a.right.carousel-control {
-    transition: 0.6s;
+.carousel-caption {
+    height: 65%;
+display: table;
+position: absolute;
+top: 0 auto;
+left: 0;
+right: 0;
+z-index: 10;
+width: 100%;
+margin: 0 auto;
+text-align: center;
 }
 
-#myCarousel > a.left.carousel-control {
-    transition: 0.6s;
+.carousel-inner {    
+    height: 100%;
+    height: 100%;
+    position: absolute;
+}
+.carousel {
+    height: 100%;
+    height: 100%;
 }
 /*------------ END CAROUSEL HEADER ------------*/
+/*------------------------------------------------ END HEADER ------------------------------------------------*/
+/*------------------------------------------------ END NEDKO ------------------------------------------------*/
 
-/*------------------------------------------------ END HEADER ------------------------------------*/
 
 
 
-/*------------ h2 Gallery Heading ------------*/
-
-body > section:nth-child(4) > h2:nth-child(1) {
-    padding-top: 20px;
-    margin-top: 0;
-}
-
-/*------------ END h2 Gallery Heading  ------------*/
-/*------------ SECTION ------------*/
+/*------------------------------------------------ Radost ------------------------------------------------*/
+/*------------ SECTION NEWS ------------*/
 section {
     background-color: white;
-    width: 90%;
-    height: 500px;
+    width: 95%;
     margin: 0 auto;
-    padding: 0;
     text-align: justify;
 }
 
-
-/*------------END SECTION ------------*/
 /*------------ NEWS ------------*/
 /* Start Show/Hide functionality. */
 .more {
@@ -180,7 +166,8 @@ a.showLink:hover, a.hideLink:hover {
     font-size: 1.8em;
     text-align: center;
     margin: 0;
-    padding: 5% 0;
+    padding-top: 100vh;
+    position: relative;
 
 }
 #news{
@@ -210,3 +197,58 @@ a.showLink:hover, a.hideLink:hover {
 }
 
 /*------------ END NEWS ------------*/
+/*------------END SECTION NEWS ------------*/
+/*------------------------------------------------ End Radost ------------------------------------------------*/
+/*------------ Empty Space Backg ------------*/
+.empty-space {
+    width: 100%;
+    height: 250px;
+    background:url('../images/backg7.jpg') 50% 50% / cover no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*------------ END Empty Space Backg ------------*/
+/*------------ SECTION GALLERY TEAM CONTACTS ------------*/
+
+
+
+
+
+
+
+/*------------------------------------------------ Tihomira ------------------------------------------------*/
+/*------------ GALLERY ------------*/
+
+
+
+/*------------ END GALLERY ------------*/
+/*------------------------------------------------ End Tihomira ------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------ Ali ------------------------------------------------*/
+/*------------ TEAM ------------*/
+
+
+
+/*------------ END TEAM ------------*/
+/*------------------------------------------------ End Ali ------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------ Borislav ------------------------------------------------*/
+/*------------ CONTACTS ------------*/
+
+
+
+/*------------ END CONTACTS ------------*/
+/*------------------------------------------------ End Borislav ------------------------------------------------*/
+/*------------END SECTION GALLERY TEAM CONTACTS ------------*/

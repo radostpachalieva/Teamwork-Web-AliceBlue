@@ -12,9 +12,18 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>AliceBlue</title>
+        <script>
+ 		 $('.carousel').carousel({
+    			interval: 3000
+  	 			});
+ 		 $('.carousel').carousel({
+    			pause: false
+				});</script>
     </head>
     <body>
+<!--====================- NEDKO -=====================--> 
         <header>
+        <div class="fullbackghw">
         	<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
        			<div class="navbar-header">
             		<button id="login-btn" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -34,7 +43,7 @@
             		</ul>
         		</div>
     		</nav>
-
+<!--============================================== CAROUSEL ==============================================-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -47,6 +56,7 @@
 		<li data-target="#myCarousel" data-slide-to="7"></li>
 		<li data-target="#myCarousel" data-slide-to="8"></li>
 		<li data-target="#myCarousel" data-slide-to="9"></li>
+    	<li data-target="#myCarousel" data-slide-to="10"></li>
       </ol>
       <div class="carousel-inner">
       <!---->
@@ -61,10 +71,17 @@
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
+              <p>#swag {</p><p>overflow: visible;</p><p>}</p>
+            </div><!-- carousel-caption -->
+          </div><!-- container -->
+        </div><!-- item active -->
+        <!---->
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
               <p>How To Tell HTML from HTML5</p>
               		<p>Try it out on InternetExplorer.</p>
-              		<p>Did it work?</p>
-              		<p>No?</p>
+              		<p>Did it work? No?</p>
               		<p>It's HTML5.</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
@@ -74,7 +91,7 @@
           <div class="container">
             <div class="carousel-caption">
             <p>Internet not working?</p>
-              <p class="ppadding">Check Online for solution.</p>
+              <p>Check Online for solution.</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
@@ -83,7 +100,7 @@
           <div class="container">
             <div class="carousel-caption">
               <p>Keyboard not found</p>
-              <p class="ppadding">Press F1 to continue.DEL to enter Setup</p>
+              <p>Press F1 to continue.DEL to enter Setup</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
@@ -103,16 +120,15 @@
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <p class="ppadding">Programming is like sex. One mistake and you have to support it for the rest of your life.</p>
+              <p >Programming is like sex.</p><p> One mistake and you have to support it for the rest of your life.</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
-        <!---->
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
               <p>"It's usually aimed at programmers,not humans."</p>
-              <p class="ppadding">Programmer != Human</p>
+              <p>Programmer != Human</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
@@ -121,7 +137,7 @@
           <div class="container">
             <div class="carousel-caption">
               <p>Real Programmers don't comment their code.</p>
-              <p class="ppadding">If It was hard to write, it should be hard to understand.</p>
+              <p>If It was hard to write, it should be hard to understand.</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
@@ -131,7 +147,7 @@
             <div class="carousel-caption">
               <p>THEY SEE ME ROLLIN'</p>
               <img src="images/hate.png" alt=" ">
-              <p class="ppadding">THEY HATIN'</p>
+              <p>THEY HATIN'</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
@@ -139,16 +155,21 @@
          <div class="item">
           <div class="container">
             <div class="carousel-caption">
-              <p class="ppadding">I just found out that the brain is like a computer. If that's true, then there really aren't any stupid people. Just People running DOS.</p>
+              <p>I just found out that the brain is like a computer.</p> 
+              <p>If that's true, then there really aren't any stupid people. 
+              <p>Just People running DOS.</p>
             </div><!-- carousel-caption -->
           </div><!-- container -->
         </div><!-- item active -->
         <!---->
       </div><!-- carousel-inner -->
     </div><!-- /.carousel -->
+    </div><!-- End fullbackghw -->
+<!--============================================== END CAROUSEL ==============================================-->
         </header><!--===============================================================================================-->
+<!--====================- END NEDKO -=====================--> 
         <section>
-            <!--Radost-->
+<!--====================- Radost -=====================--> 
             <h2 id="newsh">- Новини -</h2>
             <div id="news">
                 <article>
@@ -167,49 +188,44 @@
                 </article>
             </div> <!-- END NEWSH -->
             </section>
-            <!--End Radost-->
+<!--====================- End Radost -=====================--> 
             <div class="empty-space"></div>
             <section>
 
             
-            <!--Tihomira-->
+<!--====================- Tihomira -=====================--> 
             <h2>- Галерия -</h2>
             <div id="gallery">
 
             </div> <!-- END GALLERY -->
-            <!--End Tihomira-->
+<!--====================- End Tihomira -=====================--> 
             
-            <!--Ali-->
+<!--====================- Ali -=====================--> 
             <h2>- Екип -</h2>
             <div id="team">
 
             </div> <!-- END TEAM -->
-            <!--End Ali-->
+<!--====================- End Ali -=====================--> 
             
-            <!--Borislav-->
+
+<!--====================- Borislav -=====================--> 
             <h2>- Контакти -</h2>
             <div id="contact">
 
             </div> <!-- END CONTACT -->
-            <!--End Borislav-->
+<!--====================- End Borislav -=====================--> 
         </section>
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
- 		$('.carousel').carousel({
-   			interval: 8000
-  				});
- 		</script>
     	<script src="js/gruntfile.js"></script>
         <script src="js/On-Click.js"></script>
         <script type="text/javascript">
         $(function() {
-    $('nav-wrapper').height($("nav").height());
-
-    $('nav').affix({
+    	$('nav-wrapper').height($("nav").height());
+		$('nav').affix({
         offset: { top: $('nav').offset().top }
-    });
-});</script>
+    		});
+		});</script>
                 <!--It has to go in js file-->
         <script type="text/javascript">
             function showHide(shID) {
