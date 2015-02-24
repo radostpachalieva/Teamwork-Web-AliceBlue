@@ -59,9 +59,10 @@ nav.affix {
     z-index: 9999;
     position: fixed;
     top: 0;
-    background: rgba(10, 10, 10, 0.9);
+    background: rgba(10, 10, 10, 0);
     width: 100%;
     transition: 3s;
+    border:none;
     box-shadow: 0px 5px 20px #888888;
 }
 
@@ -80,23 +81,19 @@ nav.affix {
 
 /*------------ END Navbar ------------*/
 /*------------ CAROUSEL HEADER ------------*/
-.carousel-caption {
-  z-index: 10;
-}
-
 .carousel .item {
 height: 100%;
 margin: 0 auto;
 }
 
 .carousel-caption {
-    height: 65%;
+z-index: 3;
+height: 65%;
 display: table;
 position: absolute;
 top: 0 auto;
 left: 0;
 right: 0;
-z-index: 10;
 width: 100%;
 margin: 0 auto;
 text-align: center;
