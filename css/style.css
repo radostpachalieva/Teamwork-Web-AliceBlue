@@ -11,46 +11,6 @@
     background-size: cover;
 }
 
-/* RESOLUTIONS */
-@media (min-width: 1200px) {
-#myCarousel > div > div.item.active > div > div > p {
-    font-size: 48px;
-    transition: 0.7s;
-    }
-}
-/* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-#myCarousel > div > div.item.active > div > div > p {
-    font-size: 45px;
-    transition: 0.7s;
-    }
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-#myCarousel > div > div.item.active > div > div > p {
-    font-size: 35px;
-    transition: 0.7s;
-    }
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-#myCarousel > div > div.item.active > div > div > p {
-    font-size: 30px;
-    transition: 0.7s;
-    }
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-#myCarousel > div > div.item.active > div > div > p {
-    font-size: 20px;
-    transition: 0.7s;
-    }
-}
-
-/* END RESOLUTIONS */
 /* ------------ GLOBAL ------------ */
 body{
     background-color: #F5F5F5 !important;
@@ -59,17 +19,38 @@ body{
 /*------------ END GLOBAL ------------*/
 /*------------------------------------------------ HEADER ------------------------------------*/
 /*------------ Navbar ------------*/
+body > header > div > nav.affix-top > #navbarCollapse > ul > li.active > a {
+    display: none;
+}
+body > header > div > nav > div.navbar-header > a {
+    border: none;
+}
+body > header > div > nav.affix-top > div.navbar-header > a {
+    font-size: 20px;
+    color: white;
+    color: #5BAECE;
+    border-bottom: 1px solid white;
+}
+
 #navbarCollapse {
     z-index: 999;
     position: absolute;
     right: 2%;
     display: block;
 }
+#navbarCollapse > ul > li > a:hover {
+    color: black;
+    background-color: #FFFFDB;
+}
+#navbarCollapse > ul > li > a {
+    color: white;
+    font-size: 16px;
+    background-color: rgba(10, 10, 10, 0.4);
+}
 
 nav.affix-top {
     z-index: 1;
     background: rgba(255, 255, 255, 0);
-    transition: 1s;
     border: none;
     
 }
@@ -130,11 +111,70 @@ text-align: center;
     height: 100%;
     height: 100%;
 }
+
+.carousel-indicators {
+    bottom: 5%;
+    left: 20vw;
+    margin-left: 0;
+    width: 60%;
+
+}
+.sdown {
+    width: 40px;
+    height: 40px;
+    -webkit-animation: blink 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1.5s;
+    -o-animation-iteration-count: infinite;
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+.sdown:hover {
+transition: 1s;
+background-color: black;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+body > header > div > div.carousel-indicators {
+    bottom: 0vh;
+}
 /*------------ END CAROUSEL HEADER ------------*/
 /*------------------------------------------------ END HEADER ------------------------------------------------*/
 /*------------------------------------------------ END NEDKO ------------------------------------------------*/
-
-
 
 
 /*------------------------------------------------ Radost ------------------------------------------------*/
@@ -252,3 +292,84 @@ a.showLink:hover, a.hideLink:hover {
 /*------------ END CONTACTS ------------*/
 /*------------------------------------------------ End Borislav ------------------------------------------------*/
 /*------------END SECTION GALLERY TEAM CONTACTS ------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESOLUTIONS */
+@media (min-width: 1200px) {
+    body > header > div > nav.affix-top > div.navbar-header > a {
+    font-size: 40px;
+    color: white;
+    margin-left: 40px;
+    color: #5BAECE;
+    padding-top: 20px;
+    border-bottom: 5px solid white;
+}
+nav.affix-top a {
+    transition: 1s;
+    padding: 10px 17px;
+    margin: 30px 3px 0 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+#myCarousel > div > div.item.active > div > div > p {
+    font-size: 48px;
+    transition: 0.7s;
+    }
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+#myCarousel > div > div.item.active > div > div > p {
+    font-size: 45px;
+    transition: 0.7s;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+#myCarousel > div > div.item.active > div > div > p {
+    font-size: 35px;
+    transition: 0.7s;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+#myCarousel > div > div.item.active > div > div > p {
+    font-size: 30px;
+    transition: 0.7s;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+#myCarousel > div > div.item.active > div > div > p {
+    font-size: 20px;
+    transition: 0.7s;
+    }
+}
+
+/* END RESOLUTIONS */
