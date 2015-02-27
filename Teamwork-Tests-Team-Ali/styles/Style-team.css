@@ -33,7 +33,7 @@ a:hover {
     text-decoration: none;
     color: #707070;
 }
-section img {
+section div{
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -93,18 +93,18 @@ section img {
                   left: 50%;
 }
 
-.member_img img {
+.member_img div{
     max-width: 220px;
 }
 .facebook_img{
-    width: 46px;
-    height: 44px;
+    width: 47px;
+    height: 46px;
     background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/mini-social-icons.png) -13px -103px;
     border-radius: 30px;
 }
 .softuni_img {
-    width: 46px;
-    height: 44px;
+    width: 47px;
+    height: 46px;
     background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/download.jpg);
     background-position: 0 0;
     border-radius: 30px;
