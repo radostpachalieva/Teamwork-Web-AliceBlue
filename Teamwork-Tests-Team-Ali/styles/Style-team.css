@@ -99,13 +99,13 @@ section img {
 .facebook_img{
     width: 46px;
     height: 44px;
-    background: url(/../Teamwork-Tests/images/mini-social-icons.png) -13px -103px;
+    background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/mini-social-icons.png) -13px -103px;
     border-radius: 30px;
 }
 .softuni_img {
     width: 46px;
     height: 44px;
-    background: url(/../Teamwork-Tests/images/download.jpg);
+    background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/download.jpg);
     background-position: 0 0;
     border-radius: 30px;
 }
