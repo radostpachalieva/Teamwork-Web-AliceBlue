@@ -85,23 +85,23 @@ time, .person-publ{
 
 /*-------------- ARTICLE IMAGE ---------------------*/
 
-/*#radost img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}*/
-.col-xs-12 img,
-.col-md-8 img, 
-.col-md-pull-4 img{
+/*.row img{
     max-width: 100%;
     color: #9d9d9d
+}*/
+
+
+#radost img {
+    max-width: 100%;
 }
+
 
 /*=============== IMAGE HOVER ===============================*/
 
 /* Trim */
 .hvr-trim {
     display: inline-block;
+    max-width: 100%;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -135,6 +135,7 @@ time, .person-publ{
 /* Fade */
 .hvr-fade {
     display: inline-block;
+    max-width: 100%;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
