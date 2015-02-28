@@ -1,4 +1,3 @@
-
 ﻿* {
     margin: 0;
     padding: 0;
@@ -6,60 +5,55 @@
 
 section {
     font-family: Helvetica;
-    /*padding-top: 100vh;*/
 }
-
-section > h1{
+/*--------------- SECTION RADOST ---------------*/
+#radost h1{
     font-size: 2.2rem;
     font-weight: 600;
     font-style: normal;
     color: darkslategrey;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: dotted 1px #CCCCCC;
     padding: 1% 0;
 }
 
-section > h1:before{
+#radost h1:before{
     content: "\2014\2002";
 
 }
-section > h1:after{
+#radost h1:after{
     content: "\2002\2014";
 }
-/*------------------------------------------------ Radost ------------------------------------------------*/
-/*------------ NEWS ------------*/
+
+#radost h1:hover{
+    text-decoration: none;
+}
+#radost a:hover{
+    text-decoration: none;
+}
 
 .article-form {
+    overflow: hidden; //////////////////////
+    height: 200px; ////////////////////
+    width: 80%;
+    margin: 0 auto;
     padding: 1% 0;
-    text-align: left;
+    text-align: justify;
     border-bottom: dotted 1px #CCCCCC;
 }
 
 /*------------- ARTICLE HEADER -------------*/
 .header {
-
     font-weight: bold;
     text-align: left;
     margin-bottom: 3%;
 }
-
 
 header h2{
     margin: 0;
     /*color: tomato;*/
     color: #be3e19;
     font-size: 2.2rem;
-
-}
-header a:hover,
-header a:active,
-header a:visited,
-header h2:hover,
-header h2:active,
-header h2:visited
-{
-    text-decoration: none;
 }
 
 time, .person-publ{
@@ -76,7 +70,6 @@ time, .person-publ{
     direction: ltr;
 }
 
-
 .person-publ:before{
     content: "\2002\2022\2002#";
     font-style: italic;
@@ -84,20 +77,11 @@ time, .person-publ{
 }
 
 /*-------------- ARTICLE IMAGE ---------------------*/
-
-/*.row img{
-    max-width: 100%;
-    color: #9d9d9d
-}*/
-
-
 #radost img {
     max-width: 100%;
 }
 
-
 /*=============== IMAGE HOVER ===============================*/
-
 /* Trim */
 .hvr-trim {
     display: inline-block;
@@ -157,46 +141,100 @@ time, .person-publ{
     cursor:pointer;
 }
 
+/*------------------- RADOST MEDIA QUERY ---------------------*/
+/*Extra small devices Phones (<768px)*/
+@media all and (max-width: 768px) {
+    .article-form {
+        height: 260px;
+        width: 90%;
+        /*background-color: gray;*/
+        border: solid 2px orange;
+    }
+    .article-form span{
+        height: 100px;
+        width: 100%;
 
-/*============================================================*/
-/*----------- ARTICLE TEXT -----------------*/
+    }
+    img{
+        height: 100px;
+        width: 100%; //////////////////// Photo
+        /*        height: 140%;  //////////////////// Photo
+                width: 140%; //////////////////// Photo*/
+    }
+    .article-form .header h2{
+        font-size: 1.6rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+    }
 
+}
+/*====================================================*/
+/*Small devices Tablets (≥768px)*/
+@media all and (min-width: 768px) {  
+    .article-form {
+        height: 300px;
+        width: 80%;
+        margin: 0 auto;
+        border: solid 2px red;
+    }
+    .article-form span{
+        height: 140px;
+        width: 100%;
+    }
+    img{
+        height: 140px;
+        width: 100%; //////////////////// Photo
+        /*        height: 140%;  //////////////////// Photo
+                width: 140%; //////////////////// Photo*/
+    }
+    .article-form .header h2{
+        font-size: 2rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }  
+}
 
+/*Medium devices Desktops (≥992px)*/
+@media all and (min-width: 992px) {
+    .article-form {
+        height: 200px;
+        width: 80%;
+        margin: 0 auto;
+        border: solid 2px greenyellow;
+    }
+        .article-form span{
+        height: 100%;
+        width: 100%;
+    }
+    img{
+        height: auto;
+        width: auto;
+    }
+    .article-form .header h2{
+        font-size: 2.6rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }  
+}
 
-
-/* ------------ Start Show/Hide functionality. ---------*/
-
-
-/*------------------- ARTICLE MEDIA QUERY ---------------------*/
-
-
+/*@media all and (min-width: 400px) {
+}
+@media all and (min-width: 600px) {
+}
+@media all and (min-width: 900px) {
+}*/
 
 /*------------END SECTION NEWS ------------*/
 /*------------------------------------------------ End Radost ------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------END SECTION NEWS ------------*/
-/*------------------------------------------------ End Radost ------------------------------------------------*/
-
-
-
-
-
-
-
-
-
