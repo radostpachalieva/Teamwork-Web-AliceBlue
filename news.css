@@ -17,6 +17,14 @@ section {
     padding: 1% 0;
 }
 
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
 #radost h1:before{
     content: "\2014\2002";
 
@@ -33,8 +41,8 @@ section {
 }
 
 .article-form {
-    overflow: hidden; //////////////////////
-    height: 200px; ////////////////////
+    overflow : auto;
+    height: auto;
     width: 80%;
     margin: 0 auto;
     padding: 1% 0;
@@ -74,6 +82,20 @@ time, .person-publ{
     content: "\2002\2022\2002#";
     font-style: italic;
     text-transform: lowercase;
+}
+
+/*------------------- TEXT ----------------------------------*/
+
+/*Shortened Text with Show More Link - Jquery http://jsfiddle.net/nijinvinodan/WtdEh/*/
+a, a:visited {
+    text-decoration:none;
+}
+.comments-space {
+    min-height:50px;
+    height:auto;
+}
+.remaining-content span {
+    display:none;
 }
 
 /*-------------- ARTICLE IMAGE ---------------------*/
@@ -145,21 +167,16 @@ time, .person-publ{
 /*Extra small devices Phones (<768px)*/
 @media all and (max-width: 768px) {
     .article-form {
-        height: 260px;
-        width: 90%;
-        /*background-color: gray;*/
-        border: solid 2px orange;
+        width: 100%;
     }
     .article-form span{
-        height: 100px;
-        width: 100%;
-
+        height: 200px;
+        width: 90%;
+        margin: 0 5% 3% 5%;
     }
     img{
-        height: 100px;
-        width: 100%; //////////////////// Photo
-        /*        height: 140%;  //////////////////// Photo
-                width: 140%; //////////////////// Photo*/
+        height: 200px;
+        width: 100%;
     }
     .article-form .header h2{
         font-size: 1.6rem;
@@ -167,8 +184,8 @@ time, .person-publ{
     .article-form time,
     .article-form .person-publ{
         font-size: 1rem;
-        font-weight: 300;
-        letter-spacing: 0.1rem;
+        font-weight: 600;
+        letter-spacing: 0rem;
     }
 
 }
@@ -176,20 +193,17 @@ time, .person-publ{
 /*Small devices Tablets (≥768px)*/
 @media all and (min-width: 768px) {  
     .article-form {
-        height: 300px;
         width: 80%;
         margin: 0 auto;
-        border: solid 2px red;
     }
     .article-form span{
-        height: 140px;
-        width: 100%;
+        height: 220px;
+        width: 90%;
+        margin: 0 5% 3% 5%;
     }
     img{
-        height: 140px;
-        width: 100%; //////////////////// Photo
-        /*        height: 140%;  //////////////////// Photo
-                width: 140%; //////////////////// Photo*/
+        height: 100%;
+        width: 100%; 
     }
     .article-form .header h2{
         font-size: 2rem;
@@ -197,7 +211,7 @@ time, .person-publ{
     .article-form time,
     .article-form .person-publ{
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 0.1rem;
     }  
 }
@@ -205,14 +219,13 @@ time, .person-publ{
 /*Medium devices Desktops (≥992px)*/
 @media all and (min-width: 992px) {
     .article-form {
-        height: 200px;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
-        border: solid 2px greenyellow;
     }
         .article-form span{
         height: 100%;
         width: 100%;
+        margin: 0 0 3% 0;
     }
     img{
         height: auto;
@@ -223,18 +236,11 @@ time, .person-publ{
     }
     .article-form time,
     .article-form .person-publ{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 600;
         letter-spacing: 0.2rem;
     }  
 }
-
-/*@media all and (min-width: 400px) {
-}
-@media all and (min-width: 600px) {
-}
-@media all and (min-width: 900px) {
-}*/
 
 /*------------END SECTION NEWS ------------*/
 /*------------------------------------------------ End Radost ------------------------------------------------*/
