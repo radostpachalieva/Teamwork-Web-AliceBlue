@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-module.exports = function (grunt) {
+function test() {
   'use strict';
 
   // Force use of Unix newlines
