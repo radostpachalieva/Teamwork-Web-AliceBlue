@@ -1,7 +1,7 @@
             var showChar = 256;
             var ellipsestext = "...";
-            var moretext = "See More";
-            var lesstext = "See Less";
+            var moretext = "Покажи";
+            var lesstext = "Скрий";
             $('.comments-space').each(function() {
                 var content = $(this).html();
                 if (content.length > showChar) {
