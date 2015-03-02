@@ -14,9 +14,6 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-a {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -42,7 +39,6 @@ section div{
 }
 
 .member_item {
-    position: relative;
 
     height: 300px;
     max-width: 280px;
@@ -76,48 +72,30 @@ section div{
 }
 
 .member_img {
-                  overflow: hidden;
-                  position: absolute;
-                  z-index: 10;
-                  width: 220px;
-                  height: 220px;
-                  margin: 0 -110px 35px;
-                    display: inline-block;
-                    -webkit-border-radius: 50%;
-                     -moz-border-radius: 50%;
-                    border-radius: 50%;
-                    -khtml-border-radius: 50%;
-                  -webkit-transition: all .2s ease-in-out;
-                  -moz-transition: all .2s ease-in-out;
-                  -o-transition: all .2s ease-in-out;
-                  transition: all .2s ease-in-out;
-                  top: 0;
-                  left: 50%;
-}
-.member_img img{
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    width: 220px;
+    height: 220px;
+    margin: 0 -110px 35px;
+    display: inline-block;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     -khtml-border-radius: 50%;
-    vertical-align: middle;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    top: 0;
+    left: 50%;
 }
 
 
 
 
-.facebook_img{
-    width: 47px;
-    height: 46px;
-    background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/mini-social-icons.png) -13px -103px;
-    border-radius: 30px;
-}
-.softuni_img {
-    width: 47px;
-    height: 46px;
-    background: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/download.jpg);
-    background-position: 0 0;
-    border-radius: 30px;
-}
+
+
 
 .member_item:hover .member_img {
     transform: scale(0.3);
@@ -127,6 +105,7 @@ section div{
     -webkit-transform: scale(0.3);
     position: absolute;
     top: -60px;
+
 }
 
 .member_descr {
@@ -135,10 +114,10 @@ section div{
     left: 25px;
     right: 25px;
     top: 230px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .member_item:hover .member_descr {
@@ -163,6 +142,7 @@ section div{
 
 .member_item .member_social {
     padding-bottom: 33px;
+    text-align: center;
 }
 
 .member_item .member_social a {
@@ -187,33 +167,40 @@ section div{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+.facebook_img{
+    width: 47px;
+    height: 47px;
+    background-image: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/mini-social-icons.png);
+    background-position: 54px 0px;
+    border-radius: 25px;
 
-.softuni i,
-.softuni:hover i {
-    color: #2dc5eb;
 }
-
-.softuni:hover i {
-    color: #fff;
+.softuni_img {
+    width: 47px;
+    height: 47px;
+    background-image: url(https://raw.githubusercontent.com/radostpachalieva/Teamwork-Web-AliceBlue/master/Teamwork-Tests-Team-Ali/images/mini-social-icons.png);
+    background-position: 1px 0px;
+    border-radius: 25px;
 }
-
-.facebook i,
-.facebook:hover i {
-    color: #4d72bf;
-}
-
-.facebook:hover i {
-    color: #fff;
-}
-
-
-
 .member_item .member_social a.softuni:hover {
-    box-shadow: 0 0 0 25px #2dc5eb inset;
+
+    transform: scale(1.5);
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.member_item .member_social a.facebook:hover {
-    box-shadow: 0 0 0 25px #4d72bf inset;
+.facebook:hover {
+  /*  box-shadow: 0 0 0 25px #4d72bf inset;*/
+    transform: scale(1.5);
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
 }
 
 .member_about {
@@ -231,6 +218,7 @@ section div{
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    
 }
 
 .member_item:hover .member_about,.member_item:hover .skill-member {
@@ -241,11 +229,14 @@ section div{
     -o-transform: scale(1);
     -ms-transform: scale(1);
     -webkit-transform: scale(1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .services-box{
     border-radius: 50%;
 }
-
 
 
 
