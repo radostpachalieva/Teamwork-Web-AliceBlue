@@ -1,0 +1,246 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    font-family: Helvetica;
+}
+/*--------------- SECTION RADOST ---------------*/
+#radost h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-style: normal;
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1% 0;
+}
+
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+#radost h1:before{
+    content: "\2014\2002";
+
+}
+#radost h1:after{
+    content: "\2002\2014";
+}
+
+#radost h1:hover{
+    text-decoration: none;
+}
+#radost a:hover{
+    text-decoration: none;
+}
+
+.article-form {
+    overflow : auto;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1% 0;
+    text-align: justify;
+    border-bottom: dotted 1px #CCCCCC;
+}
+
+/*------------- ARTICLE HEADER -------------*/
+.header {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+header h2{
+    margin: 0;
+    /*color: tomato;*/
+    color: #be3e19;
+    font-size: 2.2rem;
+}
+
+time, .person-publ{
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    word-spacing: 0;
+    text-align:	left;
+    vertical-align: baseline;
+    direction: ltr;
+}
+
+.person-publ:before{
+    content: "\2002\2022\2002#";
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/*------------------- TEXT ----------------------------------*/
+
+/*Shortened Text with Show More Link - Jquery http://jsfiddle.net/nijinvinodan/WtdEh/*/
+a, a:visited {
+    text-decoration:none;
+}
+.comments-space {
+    min-height:50px;
+    height:auto;
+}
+.remaining-content span {
+    display:none;
+}
+
+/*-------------- ARTICLE IMAGE ---------------------*/
+#radost img {
+    max-width: 100%;
+}
+
+/*=============== IMAGE HOVER ===============================*/
+/* Trim */
+.hvr-trim {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+
+}
+.hvr-trim:before {
+    content: '';
+    position: absolute;
+    border: white solid 1px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    cursor:pointer;
+}
+.hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+/* Fade */
+.hvr-fade {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    cursor:pointer;
+}
+.hvr-fade:hover:before, .hvr-fade:focus:before, .hvr-fade:active:before {
+    /*background-color: rgba( 0, 0, 0, 0.5);*/
+    background-color: rgba( 255, 255, 255, 0.2);
+    color: white;
+    cursor:pointer;
+}
+
+/*------------------- RADOST MEDIA QUERY ---------------------*/
+/*Extra small devices Phones (<768px)*/
+@media all and (max-width: 768px) {
+    .article-form {
+        width: 100%;
+    }
+    .article-form span{
+        height: 200px;
+        width: 90%;
+        margin: 0 5% 3% 5%;
+    }
+    img{
+        height: 200px;
+        width: 100%;
+    }
+    .article-form .header h2{
+        font-size: 1.6rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0rem;
+    }
+
+}
+/*====================================================*/
+/*Small devices Tablets (≥768px)*/
+@media all and (min-width: 768px) {  
+    .article-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .article-form span{
+        height: 220px;
+        width: 90%;
+        margin: 0 5% 3% 5%;
+    }
+    img{
+        height: 100%;
+        width: 100%; 
+    }
+    .article-form .header h2{
+        font-size: 2rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+    }  
+}
+
+/*Medium devices Desktops (≥992px)*/
+@media all and (min-width: 992px) {
+    .article-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+        .article-form span{
+        height: 100%;
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    img{
+        height: auto;
+        width: auto;
+    }
+    .article-form .header h2{
+        font-size: 2.6rem;
+    }
+    .article-form time,
+    .article-form .person-publ{
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }  
+}
+
+/*------------END SECTION NEWS ------------*/
+/*------------------------------------------------ End Radost ------------------------------------------------*/
