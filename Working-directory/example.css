@@ -1,0 +1,213 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*------------------------------------------------ Radost ------------------------------------------------*/
+/*------------ SECTION NEWS ------------*/
+/*------------ SECTION NEWS ------------*/
+section {
+
+    width: 70%;
+    margin: 0 auto;
+    border: solid 2px blue;
+    font-family: Helvetica;
+    /*font-family:  Pona, Georgia, Times, serif;*/
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+
+}
+
+#newsh{
+    font-size: 1.8em;
+    margin: 0;
+    /*padding-top: 100vh;*/
+}
+
+article{
+
+      display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+
+    
+    box-sizing: border-box;
+
+    font-weight: bold;
+
+
+    flex-wrap: wrap;
+
+}
+
+article > div{
+    box-sizing: border-box;
+    border: solid 1px #EE5757;
+
+
+
+  padding: 10px;
+  flex: 1 100%;
+}
+
+
+.header-art{
+    box-sizing: border-box;
+/*    width: 100%;
+    height: 60px;*/
+    background-color: chartreuse;
+}
+
+.figure-art{
+    box-sizing: border-box;
+/*
+    width: 30%;
+    height: 60px;*/
+    background-color: #00CC00;
+}
+
+.text-art{
+    box-sizing: border-box;
+/*
+    width: 69%;
+    height: 60px;*/
+    background-color: darkgreen;
+}
+
+
+@media all and (min-width: 600px) {
+  div { flex: 1 auto; }
+}
+
+@media all and (min-width: 900px) {
+  .text-art   { flex: 2 0px; }
+  .figure-art { order: 1; } 
+  .text-art   { order: 2; }
+  .header-art { order: 3; }
+
+}
+
+/*@media only screen and (max-width: 600px) {
+
+    .text-art,
+    .figure-art,
+    .header-art{
+        display: block;
+        width: 100%;
+    }
+
+
+}*/
+
+
+/*================================================================*/
+
+
+/*------------ NEWS ------------*/
+/* Start Show/Hide functionality. */
+/* Start Show/Hide functionality. */
+/*.more {
+    display: none;
+}
+
+a.showLink, a.hideLink {
+    text-decoration: none;
+    color: #36f;
+    padding-left: 2px;
+}
+
+a.showLink:hover, a.hideLink:hover {
+    border-bottom: 1px dotted; }
+ End Show/Hide functionality. 
+*/
+
+
+/*------------ OTHER STYLES ------------*/
+
+
+
+
+header{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    background-color: papayawhip;
+    border: solid 1px #000;
+}
+
+time{
+
+    font-size:	1.2rem;
+    font-weight:	400;
+    font-style: normal;
+    /*color:	#CCCCCC;*/
+    color: tomato;
+    text-transform:	uppercase;
+    text-decoration:	none;
+    letter-spacing:	0.2rem;
+    word-spacing:	0;
+    line-height:	2;
+    text-align:	left;
+    vertical-align:	baseline;
+    direction:	ltr;
+    border: solid 1px greenyellow;
+}
+
+figure{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin: 0 2% 0 0;
+    background-color: azure;
+    border: solid 1px #000;
+
+}
+
+
+
+figure img{
+    max-width:100%;
+    max-height:100%;
+}
+
+.article-text{
+    background-color: khaki;
+    border: solid 1px #000;
+
+}
+
+p{
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    line-height: 1.2;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+
+}
+
+/*------------ NEWS ------------*/
+/* Start Show/Hide functionality. */
+
+/*------------ END NEWS ------------*/
+/*------------END SECTION NEWS ------------*/
+/*------------------------------------------------ End Radost ------------------------------------------------*/
+
+
+
+
+
+
