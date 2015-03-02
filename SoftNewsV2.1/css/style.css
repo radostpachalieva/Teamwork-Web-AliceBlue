@@ -382,19 +382,19 @@ h1 a:hover {
 
 #radost header h2{
     margin: 0;
-    /*color: tomato;*/
-    color: #be3e19;
-    font-size: 2.2rem;
+    color: tomato;
+    /*color: #be3e19;*/
+    font-size: 2.4rem;
 }
 
 #radost time, .person-publ{
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     font-style: normal;
     color: grey;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     word-spacing: 0;
     text-align: left;
     vertical-align: baseline;
@@ -414,6 +414,7 @@ h1 a:hover {
     min-height:50px;
     height:auto;
 }
+
 .remaining-content span {
     display:none;
 }
@@ -477,10 +478,12 @@ h1 a:hover {
     cursor:pointer;
 }
 .hvr-fade:hover:before, .hvr-fade:focus:before, .hvr-fade:active:before {
-    /*background-color: rgba( 0, 0, 0, 0.5);*/
     background-color: rgba( 255, 255, 255, 0.2);
     color: white;
     cursor:pointer;
+}
+.article-text p{
+    font-size: 1.6rem;
 }
 
 /*------------------- RADOST MEDIA QUERY ---------------------*/
@@ -498,15 +501,7 @@ h1 a:hover {
         height: 200px;
         width: 100%;
     }
-    .article-form .header h2{
-        font-size: 1.6rem;
-    }
-    .article-form time,
-    .article-form .person-publ{
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 0rem;
-    }
+
 
 }
 /*====================================================*/
@@ -525,15 +520,6 @@ h1 a:hover {
         height: 100%;
         width: 100%; 
     }
-    .article-form .header h2{
-        font-size: 2rem;
-    }
-    .article-form time,
-    .article-form .person-publ{
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 0.1rem;
-    }  
 }
 
 /*Medium devices Desktops (≥992px)*/
@@ -552,14 +538,8 @@ h1 a:hover {
         width: auto;
     }
     .article-form .header h2{
-        font-size: 2.6rem;
+        /*font-size: 2.6rem;*/
     }
-    .article-form time,
-    .article-form .person-publ{
-        font-size: 1.1rem;
-        font-weight: 600;
-        letter-spacing: 0.2rem;
-    }  
 }
 
 /*------------END SECTION NEWS ------------*/
