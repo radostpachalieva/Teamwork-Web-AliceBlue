@@ -1,0 +1,20 @@
+.fancybox {
+    width: 250px;
+    height: 150px;
+    margin: 20px 20px;
+    opacity: 0.85;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+a > img {
+    padding: 5px;
+    border: 1px solid #2b669a;
+    border-radius: 5px;
+}
+
+.fancybox:hover {
+    opacity: 1;
+    transition:1s;
+}
+
