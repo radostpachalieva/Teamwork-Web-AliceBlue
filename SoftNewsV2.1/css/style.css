@@ -229,7 +229,7 @@ h1 a:hover {
 }
 
 .affix-top > div.navbar-header > img {
-	width: 100px;
+	width: 70px;
 	height: 49px;
 	padding: 0;
 	margin-left: 37px;
@@ -575,13 +575,28 @@ h1 a:hover {
 /*------------------------------------------------ Tihomira ------------------------------------------------*/
 /*------------ GALLERY ------------*/
 
+.fancybox {
+    width: 250px;
+    height: 150px;
+    margin: 20px 20px;
+    opacity: 0.85;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#gallery a > img {
+    padding: 5px;
+    border: 1px solid #2b669a;
+    border-radius: 5px;
+}
+
+.fancybox:hover {
+    opacity: 1;
+    transition:1s;
+}
 
 /*------------ END GALLERY ------------*/
 /*------------------------------------------------ End Tihomira ------------------------------------------------*/
-
-
-
-
 
 
 /*------------------------------------------------ Ali ------------------------------------------------*/
@@ -600,21 +615,6 @@ h1 a:hover {
 }
 
 /*-----------------------------*/
-
-/*body {*/
-    /*font-family: 'Source Sans Pro',helvetica,arial,sans-serif;*/
-    /*color: #333;*/
-    /*line-height: 1.6;*/
-    /*overflow-x: hidden;*/
-    /*-webkit-transition: all .3s ease-in-out;*/
-    /*-moz-transition: all .3s ease-in-out;*/
-    /*-o-transition: all .3s ease-in-out;*/
-    /*transition: all .3s ease-in-out;*/
-/*}*/
-
-/*==========================*/
-
-
 #team a:focus {
     outline: 0;
     text-decoration: none;
@@ -648,8 +648,6 @@ h1 a:hover {
     border-radius: 3px;
 }
 
-
-
 #team .member_item:before {
     content: '';
     position: absolute;
@@ -660,7 +658,6 @@ h1 a:hover {
     height: 0;
     background-color: rgba(0,0,0,.15);
     -webkit-transition: all .2s ease-in-out;
-
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -825,11 +822,6 @@ h1 a:hover {
 
 /*------------ END TEAM ------------*/
 /*------------------------------------------------ End Ali ------------------------------------------------*/
-
-
-
-
-
 
 /*------------------------------------------------ Borislav ------------------------------------------------*/
 /*------------ CONTACTS ------------*/
@@ -1054,29 +1046,6 @@ padding: 10px;
 /*------------ END CONTACTS ------------*/
 /*------------------------------------------------ End Borislav ------------------------------------------------*/
 /*------------END SECTION GALLERY TEAM CONTACTS ------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* RESOLUTIONS */
