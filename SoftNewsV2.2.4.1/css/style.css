@@ -22,6 +22,9 @@ h2 a:focus,
 h2 a:hover {
     color: black;
 }
+h1 {
+font-family: initial;
+}
 
 .contacts,
 .gallery,
@@ -189,7 +192,7 @@ h2 a:hover {
 /*-------------- End Sidebar Menu ------------ */
 /*--------------- Header Image + h1 --------------*/
 .headerimg {
-    background: url(../images/header1.jpg) no-repeat center top fixed;
+    background: url(../images/header.jpg) no-repeat center top fixed;
     width: 100%;
     height: 150px;
     display: inline-block;
@@ -200,10 +203,10 @@ h2 a:hover {
     padding-left: 25px;
     margin-top: 40px;
     color: tomato;
-    /*font-family: serif;*/
+    font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
     text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
 }
 
 #theFixed {
@@ -1118,6 +1121,7 @@ p.validhtml5 > a > img {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+	
     #radost {
         padding-top: 0;
     }
